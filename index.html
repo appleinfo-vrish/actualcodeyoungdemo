@@ -1,0 +1,156 @@
+<html>
+    <head>
+        <style>body {
+            font-family: Arial;
+            margin: 0;
+            text-align: center;
+          }
+          
+          * {
+            box-sizing: border-box;
+          }
+          
+          img {
+            vertical-align: middle;
+          }
+          .container {
+            position: relative;
+          }
+          .mySlides {
+            display: none;
+          }
+          .prev,
+          .next {
+            cursor: pointer;
+            position: absolute;
+            top: 40%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+          }
+          .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+          }
+          .prev:hover,
+          .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+          }
+          .caption-container {
+            text-align: center;
+            background-color: #222;
+            padding: 2px 16px;
+            color: white;
+          }
+          
+          .row:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+          .column {
+            float: left;
+            width: 16%;
+          }
+          .demo {
+            opacity: 0.6;
+          }
+          
+          .active,
+          .demo:hover {
+            opacity: 1;
+          }
+            </style>
+    </head>
+    <body>
+        <h1 style="font-size:55px;"> DEV TOURS AND TRAVELS </h1>
+        <hr>
+        <h3> About Us: </h3>
+        <h5> Our mission is to be a leading tours and travels company. </h5>
+        <div class="container">
+  <div class="mySlides">
+    <img src="https://static.toiimg.com/photo/msid-93664860,width-96,height-65.cms" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <img src="https://th.bing.com/th/id/OIP.U4m7j44wmEYZhy-2OO3FGQHaFj?rs=1&pid=ImgDetMain" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <img src="https://th.bing.com/th/id/R.bf13ec18434dc2ac63d116c5c90ae23c?rik=d7qEycDm%2fcT4mw&riu=http%3a%2f%2fwww.euttarakhand.com%2fwp-content%2fuploads%2f2016%2f11%2fPic-2.jpg&ehk=FJI5XEeQwPWekvfYO8%2bkaTXCroG6McJ6jGS%2fhxZCTpk%3d&risl=&pid=ImgRaw&r=0" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <img src="https://www.holidify.com/images/bgImages/RISHIKESH.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <img src="https://media.istockphoto.com/photos/beautiful-and-colourful-city-view-nainital-uttarakhand-picture-id1267723790?b=1&k=20&m=1267723790&s=170667a&w=0&h=D1iHkCo1k-fzPzQ2nXiZycgQfRy3eiTZP2KiUjP2juU=" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <img src="https://lh5.googleusercontent.com/4RCBAY5NqioyeM5VfDuAaTgYp8BdfcguWU3jUj702ti2z5ACUOzMolv_BurnOqEUyfsAnURPkL6Vg9okMr_WsIpKDNVo_qHdmwZYmVamiiAIaXrHHGV3d7DepME3l3o68bWX2pRb" style="width:100%">
+  </div>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="https://static.toiimg.com/photo/msid-93664860,width-96,height-65.cms" style="width:100%" onclick="currentSlide(1)" alt="Visit Uttarakhand now!">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://th.bing.com/th/id/OIP.U4m7j44wmEYZhy-2OO3FGQHaFj?rs=1&pid=ImgDetMain" style="width:100%" onclick="currentSlide(2)"alt="Visit Uttarakhand now!">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://th.bing.com/th/id/R.bf13ec18434dc2ac63d116c5c90ae23c?rik=d7qEycDm%2fcT4mw&riu=http%3a%2f%2fwww.euttarakhand.com%2fwp-content%2fuploads%2f2016%2f11%2fPic-2.jpg&ehk=FJI5XEeQwPWekvfYO8%2bkaTXCroG6McJ6jGS%2fhxZCTpk%3d&risl=&pid=ImgRaw&r=0" style="width:100%" alt="Visit Uttarakhand now!"onclick="currentSlide(3)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://www.holidify.com/images/bgImages/RISHIKESH.jpg" style="width:100%" onclick="currentSlide(4)" alt="Visit Uttarakhand now!">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://media.istockphoto.com/photos/beautiful-and-colourful-city-view-nainital-uttarakhand-picture-id1267723790?b=1&k=20&m=1267723790&s=170667a&w=0&h=D1iHkCo1k-fzPzQ2nXiZycgQfRy3eiTZP2KiUjP2juU=" style="width:100%" onclick="currentSlide(5)" alt="Visit Uttarakhand now!">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="https://lh5.googleusercontent.com/4RCBAY5NqioyeM5VfDuAaTgYp8BdfcguWU3jUj702ti2z5ACUOzMolv_BurnOqEUyfsAnURPkL6Vg9okMr_WsIpKDNVo_qHdmwZYmVamiiAIaXrHHGV3d7DepME3l3o68bWX2pRb" style="width:100%" onclick="currentSlide(6)"alt="Visit Uttarakhand now!">
+    </div>
+  </div>
+</div>
+
+        <script>
+            let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+        </script>
+    </body>
+</html>
